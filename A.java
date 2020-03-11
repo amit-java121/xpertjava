@@ -1,23 +1,35 @@
+package com;
 
 public class A {
-
-	A(String str){
-		
-	}
 	
+	void m1(){
+		
+	}
 	public static void main(String[] args) {
-		String s="abc";
-		String s1 = new String("abc");
-		String s2 = new String("abc");
-		System.out.println(s2.equals(s1));	
-		Integer i = new Integer(10);
-		Integer i1 = new Integer(10);
-		System.out.println(i.equals(i1));
 		
-		A a = new A("abc");
-		A a1 = new A("abc");
-		
-		System.out.println(a.equals(a1));
-		System.out.println(a+"  "+a1);
+		//A a=null;
+		try{	
+		System.out.println("1");
+			System.out.println("2");
+			
+			try{
+				System.out.println("200");
+			int a=10/0;
+			System.out.println("100");
+			}catch(ArithmeticException e){
+				System.out.println("inside catch"+e);
+			}
+			A a=null;
+			a.m1();
+		}catch(Exception e){
+			System.out.println("inside outer catch");
+		}
+			//a.m1();
+			System.out.println("3");
+			System.out.println("4");
+			System.out.println("5");
+			System.out.println("6");
+			
 	}
-	}
+
+}
