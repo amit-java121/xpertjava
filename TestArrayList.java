@@ -1,6 +1,7 @@
 package com;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Vector;
 
@@ -29,9 +30,17 @@ public class TestArrayList {
 //		list.add("amit11");
 //		list.add("amit");
 		
-		for(int i=0;i<list.size();i++) {
-			System.out.println(list.get(i));
+		
+		Iterator<String> listItr = list.iterator();
+		while(listItr.hasNext()) {
+			System.out.println(listItr.next());
 		}
+		for(String str:list) {
+			System.out.println(str);
+		}
+//		for(int i=0;i<list.size();i++) {
+//			System.out.println(list.get(i));
+//		}
 		
 	}
 

@@ -1,6 +1,8 @@
-package com;
+package com.a;
 
-public class Employee {
+import java.util.Comparator;
+
+public class Employee{
 	String empName;
 	Integer empAge;
 	String empAddress;
@@ -39,4 +41,5 @@ public class Employee {
 	public String toString() {
 		return "Employee [empName=" + empName + ", empAge=" + empAge + ", empAddress=" + empAddress + "]";
 	}
+
 }
